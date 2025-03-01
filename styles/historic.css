@@ -1,0 +1,151 @@
+/* .historic-title {
+    text-align: center;
+}
+
+.historic-case {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.library-historic{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-cinza);
+    align-items: center;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.formatlist {
+    position: absolute;
+    background-color: #810909;
+    z-index: 2;
+    padding: 6px;
+    border-radius: 3px;
+    margin: 6px 120px 6px 6px;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-weight: 700;
+}
+
+.library-historic img {
+    max-width: 200px;
+    border-radius: 6px;
+}
+
+.historic-name-comics{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+.historic-name-comics:hover{
+    color: #810909;
+    transition: 0.3s;
+}
+
+.historic-backread{
+    background-color: rgb(32, 32, 32);
+    padding: 6px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.historic-backread:hover{
+    color: #810909;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1750px){
+    .historic-case {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 1500px){
+    .historic-case {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 1220px){
+    .historic-case {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .help-space {
+        padding-top: 6em;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .historic-case {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+} */
+
+
+.historic {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 24px;
+  }
+  
+  .historic-comics{
+    background-color: var(--cor-cinza);
+    border-radius: 6px;
+  }
+  
+  .historic-comics h2 {
+    margin-left: 16px;
+    text-align: center;
+  }
+  
+  .historic-chap-list ul {
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+  }
+  
+  .historic-chap-list a {
+    display: flex;
+    gap: 14px;
+    padding: 14px;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+  }
+  
+  .historic-chap-list a:hover{
+    background-color: rgb(32, 32, 32);
+    transition: 0.3s;
+  }
+  
+  .historic-chap-list a span {
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .historic-li-help{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .historic-chap-list img {
+    width: 80px;
+    max-height: 120px;
+  }
+  

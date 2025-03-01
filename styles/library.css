@@ -1,0 +1,26 @@
+.titles-library {
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.input-library-case {
+    display: flex;
+    justify-content: center;
+}
+
+.input-library {
+    display: none;
+    color: #fff;
+    border: 1px solid #343434;
+    border-radius: 14px;
+    padding: 12px 22px;
+    background-color: #262626;
+    width: 340px;
+    margin-bottom: 1.6rem;
+}
+
+@media screen and (max-width: 1024px){
+    .input-library {
+        display: block;
+    }
+}

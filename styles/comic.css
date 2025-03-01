@@ -1,0 +1,345 @@
+.info-comic {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 24px;
+    gap: 24px;
+}
+
+.comic-left {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.top-comic{
+    display: flex;
+    background-color: var(--cor-cinza);
+    padding: 14px;
+    border-radius: 6px;
+    gap: 16px;
+}
+
+.top-comic div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-comic img {
+    max-width: 200px;
+    max-height: 285px;
+    border-radius: 8px;
+}
+
+
+.checkbox-wrapper-4 * {
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .checkbox-wrapper-4 .cbx {
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    display: inline-block;
+  }
+  
+  .checkbox-wrapper-4 .cbx:not(:last-child) {
+    margin-right: 6px;
+  }
+  
+  .checkbox-wrapper-4 .cbx {
+    background: rgb(32, 32, 32);
+    padding: 8px;
+    border-radius: 8px;
+  }
+  
+  .checkbox-wrapper-4 .cbx span {
+    float: left;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .checkbox-wrapper-4 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    transform: scale(1);
+    border: 1px solid #dbcccc;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 1px rgba(0,16,75,0.05);
+  }
+  
+  .checkbox-wrapper-4 .cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .checkbox-wrapper-4 .cbx span:last-child {
+    padding-left: 8px;
+    line-height: 18px;
+  }
+  
+  .checkbox-wrapper-4 .cbx:hover span:first-child {
+    border-color: rgb(255, 0, 0);
+  }
+  
+  .checkbox-wrapper-4 .inp-cbx {
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  .checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child {
+    background: rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0);
+    animation: wave-4 0.4s ease;
+  }
+  
+  .checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+  }
+  
+  .checkbox-wrapper-4 .inline-svg {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .checkbox-wrapper-4 .cbx {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+  
+  @-moz-keyframes wave-4 {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+  
+  @-webkit-keyframes wave-4 {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+  
+  @-o-keyframes wave-4 {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+  
+  @keyframes wave-4 {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+
+#img-saved{
+    width: 1rem;
+}
+
+.chap-number{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.chap-number a {
+    text-decoration: none;
+    padding: 8px;
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.chap-number a:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+.chapters-comic {
+    background-color: var(--cor-cinza);
+    border-radius: 6px;
+}
+
+.chapters-comic h2{
+    padding: 16px 0 0 16px;
+}
+
+.chap-list ul {
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.chap-list a {
+    display: flex;
+    gap: 14px;
+    padding: 14px;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    font-weight: 700;
+}
+
+.chap-list a:hover{
+    background-color: rgb(32, 32, 32);
+    transition: 0.3s;
+}
+
+.chap-list img {
+    max-width: 120px;
+    max-height: 50px;
+    border-radius: 6px;
+}
+
+.li-chaps {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.chap-list a span {
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.sumary {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.sumary-info{
+    background-color: var(--cor-cinza);
+    padding: 14px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.sumary-info h3 {
+    font-size: 18px;
+}
+
+.info-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-author {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-color {
+    color: rgb(100, 100, 100);
+}
+
+.info-author p{
+    margin: 0;
+}
+
+.right-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.top-comics-right{
+  background-color: var(--cor-cinza);
+  border-radius: 6px;
+}
+
+.top-comics-right h2 {
+  margin-left: 16px;
+}
+
+.chap-list-right ul {
+  list-style-type: none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.chap-list-right a {
+  display: flex;
+  gap: 14px;
+  padding: 14px;
+  text-decoration: none;
+  color: #fff;
+  align-items: center;
+}
+
+.chap-list-right a:hover{
+  background-color: rgb(32, 32, 32);
+  transition: 0.3s;
+}
+
+.chap-list-right a span {
+  color: rgb(100, 100, 100);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.li-help{
+  display: flex;
+  flex-direction: column;
+}
+
+.chap-list-right img {
+  width: 60px;
+  max-height: 80px;
+}
+
+.chat-live-on {
+  padding: 6px 16px 16px;
+  background-color: var(--cor-cinza);
+  border-radius: 6px;
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 1400px) {
+  .info-comic {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .chap-number a {
+    font-size: 14px;
+  }
+}

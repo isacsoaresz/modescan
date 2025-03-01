@@ -1,0 +1,91 @@
+.chapter-title {
+    margin: 4em;
+    text-align: center;
+}
+
+.chapter-h1 {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;    
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.flex-div img {
+    width: 16px;
+}
+
+.nav-chapter {
+    display: flex;
+    justify-content: space-around;
+}
+
+.number-chapter {
+    font-weight: 700;
+    border: 1px solid #fff;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.flex-div a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    align-items: center;
+    gap: 4px;
+}
+
+.flex-div a:hover {
+    transition: 0.3s;
+    background-color: var(--cor-cinza);
+    color: rgb(219, 219, 219);
+}
+
+.line-guide {
+    margin: 12px 0;
+}
+
+.chapter-open {
+    display: flex;
+    justify-content: center;
+}
+
+.chapter-imgs img {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-subir{
+    width: 20px;
+    height: 20px;
+  }
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 0, 0, 0.377);
+    color: white;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 8px;
+  }
+
+  #myBtn:hover {
+    background-color: #555;
+    transition: 0.3s;
+  }
+
+  @media screen and (max-width: 1024px){
+    #myBtn {
+        bottom: 80px;
+    }
+  }
